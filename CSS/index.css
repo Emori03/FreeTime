@@ -1,0 +1,125 @@
+:root {
+    --color-principal: #f53907;
+    --color-principal-secundario: #fae4d1;
+    --color-secundario: #8e2704;
+    --color-secundario-secundario: #8e5a44;
+    --color-contraste: #e9f299;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url('../IMG/pexels-jakubzerdzicki-28820768.jpg');
+    background-size: cover;
+    background-position: center;
+    /* height: 30%; */
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-contraste);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--color-principal);
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    background-color: var(--color-secundario);
+    height: 7vh;
+    padding: 0 1vw;
+    border-radius: 0 0 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+nav ul li {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:hover {
+    height: 7vh;
+    background-color: var(--color-secundario);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.content {
+    flex: 1;
+    margin: 0;
+    height: auto;
+    min-height: 60vh;
+}
+
+.content aside {
+    display: none;
+    background-color: var(--color-principal);
+    color: var(--color-contraste);
+    padding: 2vh 2vw 2vh 0;
+    height: 100%;
+    width: auto;
+    max-width: 20vw;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.content aside ul {
+    padding: 2vw;
+}
+
+.content aside ul li {
+    margin: 0 0 1vh 0;
+}
+
+.content aside ul li a {
+    color: var(--color-contraste);
+    text-decoration: none;
+}
+
+.content section {
+    padding: 5vh 2vw 5vh 2vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.content section article {
+    background-color: violet;
+    max-width: 45vw;
+}
+
+.content section article img {
+    width: 40vw;
+    padding: 3vh 2.5vw 3vh 2.5vw;
+}
+
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-contraste);
+    text-align: center;
+    padding: 1em;
+}
