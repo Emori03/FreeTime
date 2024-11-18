@@ -9,4 +9,36 @@ document.addEventListener('DOMContentLoaded', function() {
             aside.style.display = 'none';
         }
     });
+
+    $("#loginModal").dialog({
+        autoOpen: false,
+        modal: true,
+        buttons: {
+            "Cerrar": function() {
+                $(this).dialog("close");
+            }
+        }
+    });
+
+    $("#registerModal").dialog({
+        autoOpen: false,
+        modal: true,
+        buttons: {
+            "Cerrar": function() {
+                $(this).dialog("close");
+            }
+        }
+    });
+
+    $("#login").click(function(event) {
+        event.preventDefault();
+        $("#loginModal").dialog("open");
+    });
+
+    $("#register").click(function(event) {
+        event.preventDefault();
+        $("#registerModal").dialog("open");
+    });
+    
 });
+
