@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido</title>
     <link rel="icon" href="./IMG/316319.png" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CDN/jquery-ui-1.14.1.custom/jquery-ui.css">
     <link rel="stylesheet" href="./CDN/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./CDN/sweetalert2.min.css">
 </head>
 <body>
     <header>
         <h1>Free Time</h1>
     </header>
     <nav>
-        <img src="./IMG/lista.png" id="toggleAside">
         <ul>
             <li><a id="login">Ingreso</a></li>
             <li><a id="register">Registro</a></li>
@@ -78,7 +78,7 @@
                 <input type="password" id="passwordInputLogin" name="passwordInputLogin" placeholder="ingresa tu contraseña">
             </div>
             <div class="buttonGroup">
-                <button id="loginButton">Ingresar</button>
+                <button type="submit" id="loginButton">Ingresar</button>
                 <button type="reset">Limpiar</button>
             </div>
         </form>
@@ -105,7 +105,7 @@
                 <input type="password" id="confirmInputRegister" name="confirmInputRegister" placeholder="confirma tu contraseña">
             </div>
             <div class="buttonGroup">
-                <button id="registerButton">Registrar</button>
+                <button type="submit" id="registerButton">Registrar</button>
                 <button type="reset">Limpiar</button>
             </div>
         </form>
@@ -114,6 +114,7 @@
     <script src="./CDN/JQuery-3.7.1.min.js"></script>
     <script src="./CDN/jquery-ui-1.14.1.custom/jquery-ui.min.js"></script>
     <script src="./CDN/fontawesome-free-6.6.0-web/js/all.min.js"></script>
+    <script src="./CDN/sweetalert2.all.min.js"></script>
     <script src="./JS/index.js"></script>
 </body>
 </html>
