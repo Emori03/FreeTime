@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./CSS/main.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <h1>Free Time</h1>
     </header>
     <nav>
@@ -19,47 +19,19 @@
         <aside id="menuAside">
             <h3>Nuestro sitio</h3>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Acerca de</a></li>
-                <li><a href="">Contactanos</a></li>
+                <li><a onclick="addParameter('Pagina', 'main')">Inicio</a></li>
+                <li><a onclick="addParameter('Pagina', 'productos')">Menu</a></li>
+                <li><a onclick="addParameter('Pagina', 'about')">Acerca de</a></li>
+                <li><a onclick="addParameter('Pagina', 'contact')">Contactanos</a></li>
             </ul>
         </aside>
-        <section>
-            <article class="imagenesArticle">
-                <img src="./IMG/4704680.png">
-                <div>
-                    <h3>Ejemplo #1</h3>
-                    <p>Config</p>
-                </div>
-            </article>
-            <article class="imagenesArticle">
-                <img src="./IMG/10069193.png">
-                <div>
-                    <h3>Ejemplo #2</h3>
-                    <p>Ordenador</p>
-                </div>
-            </article>
-            <article class="imagenesArticle">
-                <img src="./IMG/descargar (1).jpeg">
-                <div>
-                    <h3>Ejemplo #3</h3>
-                    <p>Mando</p>
-                </div>
-            </article>
-            <article class="imagenesArticle">
-                <img src="./IMG/descargar.jpeg">
-                <div>
-                    <h3>Ejemplo #4</h3>
-                    <p>Mando</p>
-                </div>
-            </article>
-        </section>
+        <section id="mainContent"></section>
     </div>
     <footer>
         <h3>FOOTER Test</h3>
     </footer>
 
+    <script src="./CDN/JQuery-3.7.1.min.js"></script>
     <script src="./JS/main.js"></script>
 </body>
 </html>
