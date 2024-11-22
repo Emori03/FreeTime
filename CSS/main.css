@@ -108,12 +108,12 @@ nav ul li a {
     grid-gap: 10px;
 }
 
-.content section article {
+.content section .imagenesArticle {
     background-color: violet;
     max-width: 45vw;
 }
 
-.content section article img {
+.content section .imagenesArticle img {
     width: 40vw;
     padding: 3vh 2.5vw 3vh 2.5vw;
 }
