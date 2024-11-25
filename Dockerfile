@@ -1,3 +1,3 @@
-FROM httpd:latest
+FROM php:7.2-apache
 
-COPY . /usr/local/apache2/htdocs/
+COPY . /var/www/html/

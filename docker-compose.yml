@@ -1,0 +1,28 @@
+services:
+  freetime-bd:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: freetime
+      MYSQL_USER: root
+      MYSQL_PASSWORD: freetime09
+    volumes:
+      - BD:/var/lib/mysql
+    networks:
+      - freetime-network
+    ports:
+      - "3306:3306"
+
+  freetime:
+    image: freetime:latest
+    depends_on:
+      - freetime-bd
+    networks:
+      - freetime-network
+    ports:
+      - "8086:80"
+
+networks:
+  freetime-network:
+
+volumes:
+  BD:

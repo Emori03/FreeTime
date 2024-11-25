@@ -1,9 +1,15 @@
 <?php
-$host = '127.0.0.1';
+$host = 'freetime-bd';
 $db = 'freetime';
-$user = 'freetime';
-$pass = 'FreeTime09$';
+$user = 'root';
+$pass = 'freetime09';
 $charset = 'utf8mb4';
+
+// $host = '127.0.0.1';
+// $db = 'freetime';
+// $user = 'freetime';
+// $pass = 'FreeTime09$';
+// $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
