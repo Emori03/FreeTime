@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 success: function(response) {
                     console.log(response);
-                    window.location.href = './main.html'
+                    window.location.href = './main.html?User=' + response[0].UserId + '&Pagina=main';
                 },
                 error: function(xhr, status, error) {
                     $('#resultado').html('Error: ' + error);
