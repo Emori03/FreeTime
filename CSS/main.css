@@ -17,15 +17,14 @@ header {
     background-image: url('../IMG/pexels-jakubzerdzicki-28820768.jpg');
     background-size: cover;
     background-position: center;
-    height: 30vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     color: var(--color-contraste);
     font-size: 2.5em;
     text-align: center;
 }
 
+/* Clases para la navegacion */
 nav {
     background-color: var(--color-principal);
     height: 7vh;
@@ -67,12 +66,14 @@ nav ul li a {
 }
 
 .content {
+    display: flex;
     flex: 1;
     margin: 0;
-    height: auto;
+    height: 100%;
     min-height: 60vh;
 }
 
+/* Menu desplegable */
 .content aside {
     display: none;
     background-color: var(--color-principal);
@@ -99,6 +100,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Clases para la seccion principal */
 .content section {
     padding: 5vh 2vw 5vh 2vw;
     display: grid;
@@ -106,16 +108,17 @@ nav ul li a {
     grid-gap: 10px;
 }
 
-.content section article {
+.content section .imagenesArticle {
     background-color: violet;
     max-width: 45vw;
 }
 
-.content section article img {
+.content section .imagenesArticle img {
     width: 40vw;
     padding: 3vh 2.5vw 3vh 2.5vw;
 }
 
+/* Clases para el pie de pagina */
 footer {
     background-color: var(--color-secundario);
     color: var(--color-contraste);
@@ -123,6 +126,7 @@ footer {
     padding: 1em;
 }
 
+/* Clases para los modales */
 .modal {
     display: none;
 }
@@ -185,6 +189,7 @@ footer {
     font-size: 16px;
     cursor: pointer;
 }
+
 .modal form .buttonGroup button[type="reset"] {
     width: 100%;
     padding: 10px;
