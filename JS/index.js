@@ -96,35 +96,35 @@ document.addEventListener('DOMContentLoaded', function() {
                 showConfirmButton: false,
                 timer: 1500
             });
-        }
-    
-        $.ajax({
-            url: './PHP/Register.php',
-            type: 'POST',
-            data: {
-                nombre: nombre,
-                email: email,
-                password: password
-            },
-            success: function(response) {
-                if (response === 'Registro creado exitosamente.') {
-                    formulario.reset();
-                    
-                    Swal.fire({
-                        position: "top-end",
-                        icon: "success",
-                        title: "Registro completo",
-                        background: '#8e2704',
-                        color: '#fff',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
+        } else {
+            $.ajax({
+                url: './PHP/Register.php',
+                type: 'POST',
+                data: {
+                    nombre: nombre,
+                    email: email,
+                    password: password
+                },
+                success: function(response) {
+                    if (response === 'Registro creado exitosamente.') {
+                        formulario.reset();
+                        
+                        Swal.fire({
+                            position: "top-end",
+                            icon: "success",
+                            title: "Registro completo",
+                            background: '#8e2704',
+                            color: '#fff',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                    }
+                },
+                error: function(xhr, status, error) {
+                    $('#resultado').html('Error: ' + error);
                 }
-            },
-            error: function(xhr, status, error) {
-                $('#resultado').html('Error: ' + error);
-            }
-        });
+            });
+        }
     });
 
     $('#loginForm').on('submit', function(event) {
