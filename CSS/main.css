@@ -32,6 +32,7 @@ header {
     text-align: center;
 }
 
+/* Clases para la navegacion */
 nav {
     grid-area: nav;
     background-color: var(--color-principal);
@@ -54,6 +55,7 @@ nav img {
     align-items: center;
 }
 
+/* Menu desplegable */
 .content aside {
     grid-area: aside;
     display: none;
@@ -79,6 +81,7 @@ nav img {
     text-decoration: none;
 }
 
+/* Clases para la seccion principal */
 .content section {
     grid-area: content;
     padding: 5vh 2vw;
@@ -87,7 +90,6 @@ nav img {
     grid-template-columns: repeat(4, 20vw);
     grid-gap: 10px;
 }
-
 .content section article {
     background-color: var(--color-gray);
     border-radius: 2em;
